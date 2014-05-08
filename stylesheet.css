@@ -10,6 +10,7 @@ div{
 	width: 600px;
 	height: 606px;
 }
+
 .a01{
 	background-image: url('img/apple01.jpg');	
 }
@@ -31,5 +32,9 @@ div{
 .a07{
 	background-image: url('img/apple07.jpg');	
 }
+.a00{
+	background-image: url('img/apple00.jpg');	
+}
+
 
 

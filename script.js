@@ -19,23 +19,26 @@ $(document).ready(function(){
 	}
 
 	var firepoint = function(){
-			if(shakepoint > 30){
-	           $('.a01').addClass('a07');
+			if(shakepoint > 20){
+	           $('.a00').addClass('a07');
 	        }
-	        else if(shakepoint > 25){
-	           $('.a01').addClass('a06');
+	        else if(shakepoint > 18){
+	           $('.a00').addClass('a06');
 	        }
-	        else if (shakepoint > 20){
-	           $('.a01').addClass('a05');
+	        else if (shakepoint > 15){
+	           $('.a00').addClass('a05');
 	        }
-	        else if(shakepoint > 15){
-	           $('.a01').addClass('a04');
+	        else if(shakepoint > 12){
+	           $('.a00').addClass('a04');
 	        }
-	        else if(shakepoint > 10){
-	           $('.a01').addClass('a03');
+	        else if(shakepoint > 9){
+	           $('.a00').addClass('a03');
 	        }
-	        else if(shakepoint > 5){
-	           $('.a01').addClass('a02');
+	        else if(shakepoint > 6){
+	           $('.a00').addClass('a02');
+	        }
+	        else if(shakepoint > 3){
+	           $('.a00').addClass('a01');
 	        }
 	}
 	
