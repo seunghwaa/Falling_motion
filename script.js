@@ -59,7 +59,8 @@ $(document).ready(function(){
 		else if(temp_x < -5 && flag === 1) 
 		{				  
 			shakepoint++;             
-			flag = -1;                 
+			flag = -1;  
+			$("#ball02").fadeIn("fast",1);               
 		}
 	}
 
