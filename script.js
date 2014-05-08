@@ -7,11 +7,11 @@ $(document).ready(function(){
 	
 	var shake = function(){ 
 		
-		if(temp_x > 5 && flag === -1){ 
+		if(temp_x > 3 && flag === -1){ 
 			shakepoint++;          
 			flag = 1;            
 		}
-		else if(temp_x < -5 && flag === 1) 
+		else if(temp_x < -3 && flag === 1) 
 		{				   
 			shakepoint++;             
 			flag = -1;                
@@ -20,25 +20,22 @@ $(document).ready(function(){
 
 	var firepoint = function(){
 			if(shakepoint > 20){
-	           $('.a00').addClass('a07');
+	           $('.a01').addClass('a07');
 	        }
-	        else if(shakepoint > 18){
-	           $('.a00').addClass('a06');
+	        else if(shakepoint > 17){
+	           $('.a01').addClass('a06');
 	        }
-	        else if (shakepoint > 15){
-	           $('.a00').addClass('a05');
+	        else if (shakepoint > 13){
+	           $('.a01').addClass('a05');
 	        }
-	        else if(shakepoint > 12){
-	           $('.a00').addClass('a04');
+	        else if(shakepoint > 10){
+	           $('.a01').addClass('a04');
 	        }
-	        else if(shakepoint > 9){
-	           $('.a00').addClass('a03');
+	        else if(shakepoint > 8){
+	           $('.a01').addClass('a03');
 	        }
-	        else if(shakepoint > 6){
-	           $('.a00').addClass('a02');
-	        }
-	        else if(shakepoint > 3){
-	           $('.a00').addClass('a01');
+	        else if(shakepoint > 5){
+	           $('.a01').addClass('a02');
 	        }
 	}
 	
