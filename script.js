@@ -1,7 +1,7 @@
 $(document).ready(function(){
 	console.log("ready");	
 
-	function handleMotionEvent(event) {
+	/*function handleMotionEvent(event) {
 
 	    var x = event.accelerationIncludingGravity.x;
 	    var y = event.accelerationIncludingGravity.y;
@@ -38,9 +38,50 @@ $(document).ready(function(){
 
 		$("#ball").css("top", Math.round(newY));
 	}
-
+	
 	window.addEventListener("devicemotion", handleMotionEvent, true);
 
 	$("#ball").css("left", 30);
 	$("#ball").css("top", 30);
+	*/
+
+
+	var temp_x = 0;
+	var flag = 1;
+	var shakepoint = 0;
+
+	var shake = function(){ 
+
+		if(temp_x > 5 && flag === -1){ 
+			shakepoint++;         
+			flag = 1;             
+		}
+		else if(temp_x < -5 && flag === 1) 
+		{				  
+			shakepoint++;             
+			flag = -1;                 
+		}
+	}
+
+	function handleMotionEvent(event) {
+
+		var x = event.accelerationIncludingGravity.x; 
+		var y = event.accelerationIncludingGravity.y; 
+		var z = event.accelerationIncludingGravity.z; 
+		x = Math.round(x); 
+		temp_x = x;
+
+		$("#xVal").html(Math.round(x));
+		$("#sVal").html(shakepoint);
+
+	}
+
+
+	window.addEventListener("devicemotion", handleMotionEvent, true);
+	
+	shake();
+
+
+
+
 });
