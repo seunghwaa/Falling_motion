@@ -1,25 +1,35 @@
 html, body {
-	margin: 0;
+	margin:0;
 }
 
-#ball {
+div{
+	overflow: hidden;
 	position: absolute;
-	width: 100px;
-	height: 100px;
+}
+.falling{
+	width: 600px;
+	height: 606px;
+}
+.a01{
+	background-image: url('img/apple01.jpg');	
+}
+.a02{
+	background-image: url('img/apple02.jpg');	
+}
+.a03{
+	background-image: url('img/apple03.jpg');	
+}
+.a04{
+	background-image: url('img/apple04.jpg');	
+}
+.a05{
+	background-image: url('img/apple05.jpg');	
+}
+.a09{
+	background-image: url('img/apple06.jpg');	
+}
+.a07{
+	background-image: url('img/apple07.jpg');	
+}
 
-	top: 50%;
-	top: calc(50% - 25px);
-	left: 50%;
-	left: calc(50% - 25px);
-	background-image: url(img/apple.png);
-	
-	
-}
-#ball02{
-	width: 100px;
-	height: 100px;
-	top: 20%;
-	background-image: url(img/apple.png);
-	display:none;
-}
 
